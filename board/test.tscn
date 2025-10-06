@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bljbjyarwd5aw"]
+
+[ext_resource type="PackedScene" uid="uid://bbxumv30xqprn" path="res://board/card_on_hand.tscn" id="1_xxifl"]
+
+[node name="Test" type="Node2D"]
+
+[node name="Card_on_hand" parent="." instance=ExtResource("1_xxifl")]
+position = Vector2(320, 168)
+
+[connection signal="mouse_entered" from="Card_on_hand" to="Card_on_hand" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Card_on_hand" to="Card_on_hand" method="_on_mouse_exited"]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dffeecu0wapif"]
+
+[ext_resource type="Script" uid="uid://b6t2up4qvr6ej" path="res://board/card_placeholder.gd" id="1_buqqc"]
+[ext_resource type="Texture2D" uid="uid://b46j3eo6rr3gw" path="res://icon.svg" id="2_mejq8"]
+
+[node name="CardPlaceholder" type="Area2D"]
+script = ExtResource("1_buqqc")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.585062, 0.585062, 0.58506197, 1)
+polygon = PackedVector2Array(40, -64, 40, 64, -40, 64, -40, -64)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.42187503, 0.8671875)
+texture = ExtResource("2_mejq8")
+
+[node name="strenght_label" type="Label" parent="."]
+offset_left = -40.0
+offset_top = -64.0
+offset_right = 44.0
+offset_bottom = -41.0
+text = "strength: 5"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-40, -64, 40, -64, 40, 64, -40, 64)

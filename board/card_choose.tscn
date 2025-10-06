@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+[gd_scene load_steps=5 format=3 uid="uid://bhk8h6fbi3rpb"]
+
+[ext_resource type="Script" uid="uid://dcgwa486xo7w3" path="res://board/card_choose.gd" id="1_361o3"]
+[ext_resource type="Texture2D" uid="uid://b46j3eo6rr3gw" path="res://icon.svg" id="2_ipaxy"]
+[ext_resource type="FontFile" uid="uid://rapggwm2budn" path="res://font/MedievalSharp-Regular.ttf" id="3_ipaxy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ipaxy"]
+font_color = Color(1, 0, 0, 1)
+=======
+[gd_scene load_steps=3 format=3 uid="uid://bhk8h6fbi3rpb"]
+
+[ext_resource type="Script" uid="uid://dcgwa486xo7w3" path="res://board/card_choose.gd" id="1_361o3"]
+[ext_resource type="Texture2D" uid="uid://b46j3eo6rr3gw" path="res://icon.svg" id="2_ipaxy"]
+>>>>>>> 5565602 (fight)
+=======
+[gd_scene load_steps=5 format=3 uid="uid://bhk8h6fbi3rpb"]
+
+[ext_resource type="Script" uid="uid://dcgwa486xo7w3" path="res://board/card_choose.gd" id="1_361o3"]
+[ext_resource type="Texture2D" uid="uid://b46j3eo6rr3gw" path="res://icon.svg" id="2_ipaxy"]
+[ext_resource type="FontFile" uid="uid://rapggwm2budn" path="res://font/MedievalSharp-Regular.ttf" id="3_ipaxy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ipaxy"]
+font_color = Color(1, 0, 0, 1)
+>>>>>>> 25048fd (dzialajaca gra)
+
+[node name="CardChoose" type="Area2D"]
+script = ExtResource("1_361o3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.7683716e-07, 1.2636185e-05)
+scale = Vector2(0.99999994, 1.875)
+texture = ExtResource("2_ipaxy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-64, -120, 64, -120, 64, 120, -64, 120)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-64, -120, 64, 120)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(-64, 120, 64, -120)
+default_color = Color(1, 0, 0, 1)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25048fd (dzialajaca gra)
+
+[node name="value" type="Label" parent="."]
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_ipaxy")
+text = "123"
+label_settings = SubResource("LabelSettings_ipaxy")
+<<<<<<< HEAD
+=======
+>>>>>>> 5565602 (fight)
+=======
+>>>>>>> 25048fd (dzialajaca gra)

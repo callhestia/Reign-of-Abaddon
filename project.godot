@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="HackYeah2025"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e09fe3d (working dungeon system)
+run/main_scene="uid://di4qnq3n5v88r"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25048fd (dzialajaca gra)
+[autoload]
+
+MusicManager="*res://music_manager/music_manager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+=======
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+>>>>>>> 92e31a3 (Initial commit)
+=======
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+>>>>>>> 023081c (Initial commit)
+=======
+[display]
+
+window/stretch/mode="canvas_items"
+>>>>>>> 5565602 (fight)

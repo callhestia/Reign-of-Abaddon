@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4nk65fbj1yly"]
+
+[ext_resource type="Texture2D" uid="uid://b46j3eo6rr3gw" path="res://icon.svg" id="1_fcfhd"]
+[ext_resource type="Script" uid="uid://bw8xycdd04qwm" path="res://dungeon/dungeon_node.gd" id="1_tvla6"]
+
+[node name="dungeon_node" type="Area2D"]
+rotation = 0.0017140937
+script = ExtResource("1_tvla6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(0.6320022, 0.6064419)
+texture = ExtResource("1_fcfhd")
+
+[node name="Label" type="Label" parent="."]
+<<<<<<< HEAD
+<<<<<<< HEAD
+visible = false
+=======
+>>>>>>> e09fe3d (working dungeon system)
+=======
+visible = false
+>>>>>>> 54eabbb (semi-dzialajaca gra)
+texture_filter = 1
+offset_left = -48.08221
+offset_top = -47.917656
+offset_right = 34.91779
+offset_bottom = -24.917656
+text = "W ile tur: 6"
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = -63.97248
+offset_top = 16.10968
+offset_right = 60.02752
+offset_bottom = 39.10968
+text = "typ enemy: mag"
+
+>>>>>>> e09fe3d (working dungeon system)
+=======
+>>>>>>> 54eabbb (semi-dzialajaca gra)
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-40.068512, -39.93138, 39.93138, -40.068512, 40.068512, 39.93138, -39.93138, 40.068512)

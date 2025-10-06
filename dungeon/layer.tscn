@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cml1rc3wgjvso"]
+
+[ext_resource type="Script" uid="uid://emmbnf5lkawe" path="res://dungeon/layer.gd" id="1_4nvuj"]
+
+[node name="Layer" type="Node2D"]
+script = ExtResource("1_4nvuj")

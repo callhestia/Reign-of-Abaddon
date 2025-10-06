@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvph4dykw67o2"]
+
+[ext_resource type="Script" uid="uid://b0h8i5gr5h7j1" path="res://board/board.gd" id="1_k4dee"]
+[ext_resource type="PackedScene" uid="uid://b7pixhmlyd780" path="res://board/enemy.tscn" id="2_vj8kq"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_k4dee")
+
+[node name="Enemy" parent="." instance=ExtResource("2_vj8kq")]
+position = Vector2(576, 64)
+
+[node name="number_of_turns_left" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 191.0
+offset_bottom = 31.0
+text = "number of turns left: 6"
+
+[node name="enemy_troops" type="Node2D" parent="."]
+position = Vector2(0, 184)
+
+[node name="player_troops" type="Node2D" parent="."]
+position = Vector2(0, 352)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 1184.0
+offset_bottom = 672.0
+color = Color(0.13319641, 0.13319641, 0.13319638, 1)
+
+[node name="player_choose" type="Node2D" parent="."]
+position = Vector2(0, 324)
+
+[node name="Button" type="Button" parent="player_choose"]
+offset_left = 512.0
+offset_top = 132.0
+offset_right = 648.0
+offset_bottom = 220.0
+text = "Accept"
+
+[connection signal="pressed" from="player_choose/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://di4qnq3n5v88r"]
+
+[ext_resource type="Script" uid="uid://cpdwivajhjjr2" path="res://dungeon/dungeon.gd" id="1_d7mhw"]
+
+[node name="Dungeon" type="Node2D"]
+script = ExtResource("1_d7mhw")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(23, -4)
+color = Color(0.40069774, 0.40069774, 0.40069768, 1)
+polygon = PackedVector2Array(-55, -48, 1224, -48, 1223, 742, -111, 740)

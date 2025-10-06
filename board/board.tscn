@@ -1,0 +1,126 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+[gd_scene load_steps=4 format=3 uid="uid://cvph4dykw67o2"]
+
+[ext_resource type="Script" uid="uid://b0h8i5gr5h7j1" path="res://board/board.gd" id="1_k4dee"]
+[ext_resource type="Texture2D" uid="uid://c3pjpt6ryrjfo" path="res://graphics/gra_nazwa-3.png" id="2_eiwly"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://cvph4dykw67o2"]
+
+[ext_resource type="Script" uid="uid://b0h8i5gr5h7j1" path="res://board/board.gd" id="1_k4dee"]
+>>>>>>> 5565602 (fight)
+=======
+[gd_scene load_steps=4 format=3 uid="uid://cvph4dykw67o2"]
+
+[ext_resource type="Script" uid="uid://b0h8i5gr5h7j1" path="res://board/board.gd" id="1_k4dee"]
+[ext_resource type="Texture2D" uid="uid://c3pjpt6ryrjfo" path="res://graphics/gra_nazwa-3.png" id="2_eiwly"]
+>>>>>>> 25048fd (dzialajaca gra)
+[ext_resource type="PackedScene" uid="uid://b7pixhmlyd780" path="res://board/enemy.tscn" id="2_vj8kq"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_k4dee")
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25048fd (dzialajaca gra)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 323.99997)
+scale = Vector2(0.6, 0.59999996)
+texture = ExtResource("2_eiwly")
+
+<<<<<<< HEAD
+=======
+>>>>>>> 5565602 (fight)
+=======
+>>>>>>> 25048fd (dzialajaca gra)
+[node name="Enemy" parent="." instance=ExtResource("2_vj8kq")]
+position = Vector2(576, 72)
+
+[node name="number_of_turns_left" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 191.0
+offset_bottom = 31.0
+text = "number of turns left: 6"
+
+[node name="enemy_troops" type="Node2D" parent="."]
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+position = Vector2(0, 216)
+
+[node name="player_troops" type="Node2D" parent="."]
+position = Vector2(0, 376)
+=======
+position = Vector2(0, 184)
+
+[node name="player_troops" type="Node2D" parent="."]
+position = Vector2(0, 352)
+>>>>>>> 5565602 (fight)
+=======
+position = Vector2(0, 200)
+=======
+position = Vector2(0, 216)
+>>>>>>> 4266328 (skonczona gra)
+
+[node name="player_troops" type="Node2D" parent="."]
+position = Vector2(0, 376)
+>>>>>>> 25048fd (dzialajaca gra)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 1184.0
+offset_bottom = 672.0
+color = Color(0.13319641, 0.13319641, 0.13319638, 1)
+
+[node name="player_choose" type="Node2D" parent="."]
+visible = false
+position = Vector2(0, 324)
+
+[node name="Button" type="Button" parent="player_choose"]
+offset_left = 512.0
+offset_top = 132.0
+offset_right = 648.0
+offset_bottom = 220.0
+text = "Accept"
+
+[node name="player_hand" type="Node2D" parent="."]
+position = Vector2(576, 512)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25048fd (dzialajaca gra)
+[node name="end_fight_earlier" type="Button" parent="."]
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 192.0
+offset_bottom = 80.0
+text = "end fight earlier"
+
+[node name="end_round" type="Button" parent="."]
+offset_left = 24.0
+offset_top = 336.0
+offset_right = 112.0
+offset_bottom = 375.0
+text = "end turn"
+
+[node name="turn" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 280.0
+offset_right = 98.0
+offset_bottom = 303.0
+text = "Your Turn"
+
+[connection signal="pressed" from="player_choose/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="end_fight_earlier" to="." method="_on_end_fight_earlier_pressed"]
+[connection signal="pressed" from="end_round" to="." method="_on_end_round_pressed"]
+<<<<<<< HEAD
+=======
+[connection signal="pressed" from="player_choose/Button" to="." method="_on_button_pressed"]
+>>>>>>> 5565602 (fight)
+=======
+>>>>>>> 25048fd (dzialajaca gra)
